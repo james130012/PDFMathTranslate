@@ -1,3 +1,20 @@
+. .\venv\Scripts\Activate.ps1
+(venv) PS C:\Users\GXBOC\Documents\PDF2ZH\PDFMathTranslate> pdf2zh foo.pdf -s openai -o out_dir
+set_pdf2zh_env.ps1(在根目录，要在虚拟环境下运行)命令为. .\set_pdf2zh_env.ps1
+# -*- powershell -*-
+# PDF2ZH OpenRouter 环境变量加载脚本
+$Env:OPENAI_BASE_URL  = "https://openrouter.ai/api/v1"
+$Env:OPENAI_API_KEY   = "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"
+$Env:OPENAI_MODEL     = "deepseek/deepseek-chat-v3-0324:free"
+$Env:PDF2ZH_LANG_FROM = "en"
+$Env:PDF2ZH_LANG_TO   = "zh"
+
+
+
+
+
+
+
 <div align="center">
 
 English | [简体中文](docs/README_zh-CN.md) | [繁體中文](docs/README_zh-TW.md) | [日本語](docs/README_ja-JP.md) | [한국어](docs/README_ko-KR.md)

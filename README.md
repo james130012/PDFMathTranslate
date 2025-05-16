@@ -1,8 +1,11 @@
-. .\venv\Scripts\Activate.ps1
+python -m venv venv 创建激活环境
+.\venv\Scripts\Activate.ps1 激活环境或者. .\venv\Scripts\Activate.ps1
+pip install -e . 本地安装 要在项目目录
 (venv) PS C:\Users\GXBOC\Documents\PDF2ZH\PDFMathTranslate> pdf2zh foo.pdf -s openai -o out_dir
 set_pdf2zh_env.ps1(在根目录，要在虚拟环境下运行)命令为. .\set_pdf2zh_env.ps1
 # -*- powershell -*-
-# PDF2ZH OpenRouter 环境变量加载脚本
+要在本地根目录  foo.pdf
+# PDF2ZH OpenRouter 环境变量加载脚本(API不能上传GIT )会被锁死
 $Env:OPENAI_BASE_URL  = "https://openrouter.ai/api/v1"
 $Env:OPENAI_API_KEY   = "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"
 $Env:OPENAI_MODEL     = "deepseek/deepseek-chat-v3-0324:free"
